@@ -1,5 +1,5 @@
 FROM openjdk:17
 LABEL authors="sumit"
-COPY /Hello-0.0.1-SNAPSHOT.jar /tmp
+COPY /Hello-0.0.1-SNAPSHOT.jar .
 EXPOSE 4000
-ENTRYPOINT ["java", "-jar", "/tmp/Hello-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/Hello-0.0.1-SNAPSHOT.jar"]
